@@ -5,8 +5,8 @@ This is a repository for all tasks related to the course "Introduction to Web Pr
  tests 3
  tests 4 
  tests 5
+ test 6
+ test 7
 
- Contributors: Ajla Korman
 
-This is an update as an exercise.
 
