@@ -8,4 +8,5 @@ This is a repository for all tasks related to the course "Introduction to Web Pr
 
  Contributors: Ajla Korman
 
- This is a change through VSC
+This is an update as an exercise.
+
