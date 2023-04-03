@@ -189,4 +189,5 @@ echo $name;
 echo $_GET['name'];
 echo "<br>";
 echo $_GET['age'];
+
 ?>
