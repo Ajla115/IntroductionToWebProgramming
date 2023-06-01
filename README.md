@@ -1,12 +1,9 @@
 # IntroductionToWebProgramming
 This is a repository for all tasks related to the course "Introduction to Web Programming".
 
-
- tests 3
- tests 4 
- tests 5
- test 6
- test 7
-
+The repository has a couple of parts:
+a) lecture code
+b) lab code and lab tasks
+c) optional lab tasks
 
 
