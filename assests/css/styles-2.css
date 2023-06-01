@@ -1,0 +1,52 @@
+h4 {
+    color:blue;
+    background-color:coral;
+}
+
+.city { 
+    color: green;
+    background-color: yellow;
+} /* ovo je za class*/
+ 
+#city{
+    color: blue;
+} /*ovo je za id, id has higher property than class*/
+
+/*sto se tice prioriteta, 
+na vrhu je inline styling,
+           2. je onaj u headeru
+           3. je external css file*/
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+table th, tr, td {
+  border : solid black;
+}
+/*ovdje ce svi imati crni okvir*/
+
+table tr #table-cell{
+  color:red;
+} /*ovdje znaci da udemo u table, trazimo row koji ima ovaj id i samo taj ce imati to nesto crveno, 
+a ostali ostaju kao u ovoj super klasi, i obratiti paznju da ovdje nema zareza*/
+

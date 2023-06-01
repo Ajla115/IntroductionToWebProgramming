@@ -1,0 +1,41 @@
+/*Here, there are three font types: Tahoma, Verdana, and sans-serif. The second and third fonts are backups, in case the first one is not found.
+If font size name has more than one word to it, such as Times New Roman it will be written with " " */
+
+p {
+    font-family: Tahoma, Verdana, sans-serif;
+    }
+    
+    /*Use font to set several font properties in one declaration:*/
+    p.a {
+        font: 20px Arial, sans-serif;
+      }
+      
+      p.b {
+        font: italic small-caps bold 12px/30px Georgia, serif;
+      }
+    
+      .city {  /*ovo tacka ide kad je ovo u ovome external fajlu, i tamo se mora staviti class = "city" da bi dobilo ove atribute*/
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+    
+      /*The HTML id attribute is used to specify a unique id for an HTML element.
+    You cannot have more than one element with the same id in an HTML document.
+    The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
+    The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+    The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.
+    In the following example we have an <h1> element that points to the id name "myHeader". This <h1> element will be styled according to the #myHeader style definition in the head section:*/
+    
+    /*A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:*/
+    
+    #myHeader {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+    
+    

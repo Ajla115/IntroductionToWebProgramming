@@ -1,0 +1,205 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    /*ovdje kod 20px, ovo se pise sastavljeno, a ne odvojeno kao 20 px!*/
+      }
+
+  div { /*sta znaci ovaj div*/
+    background-color: lightgoldenrodyellow;
+  }
+
+  h3 {
+    background-image: url("../pool_water.jpg");
+    background-attachment: scroll;
+  }
+
+  p.three {
+    border-style: solid;
+    border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+    border-color: red green blue yellow;
+  }
+  
+  /*types of borders*/
+  p.one {
+    border-style: dotted solid double dashed;
+  }
+  
+  /* Three values */
+  p.two {
+    border-style: dotted solid double;
+  }
+  
+  /* Two values */
+  p.four {
+    border-style: dotted solid;
+  }
+  
+  /* One value */
+  p.five {
+    border-style: dotted;
+  }
+    
+  p.six {
+    border-bottom: 6px solid red;
+  }
+
+  p.margins {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+  }
+
+  /*p.margins  { ovo je skracena verzija
+  margin: 25px 50px 75px 100px;
+  }
+  margin: auto znaci da ce biti center horizontally
+*/ 
+  
+/*The CSS padding properties are used to generate space around an element's content, inside of any defined borders.Padding je prostor od teksta 
+do okvira tog tektsa, i on ne moze biti auto ali se msm moze inherit od parent class kao sto je div npr. Margins je prostor od okvira teksta do kraja stranice, moze biti auto sto znaci
+centered horizontally i takoder se moz naslijediti od div class.*/ 
+div {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
+
+  /*Here, the <div> element is given a width of 300px. However, the actual width of the <div> element will be 350px (300px + 25px of left padding + 25px of right padding):
+  div {
+    width: 300px;
+    padding: 25px;
+  }*/
+
+  /*Use the box-sizing property to keep the width at 300px, no matter the amount of padding:
+  div {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+}*/
+
+  /*All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules,
+   where number one has the highest priority:
+   Inline style (inside an HTML element)
+   External and internal style sheets (in the head section), ako je external definisan prije internal on ce se koristiti ili vice versa*/
+
+   table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  /*ovo collapse znaci da nema dupli boarder*/
+
+  th, td {
+    background-color: #96D4D4;
+  }
+
+  /*ovime table data i headers dobiju boju, dok granice ostaju one boje koje je pozadina, ako smo htjeli boju granica mijenjati, onda se tu mijenja
+    border color kao ovdje  th, td {
+  border-color: #96D4D4;
+}*/
+
+/*To change the space between table cells, use the CSS border-spacing property on the table element:
+
+Example
+table {
+  border-spacing: 30px; ovo znaci ako nemamo ono collapse da sad mi mozemo odluciti koliko prostora zelimo imati izmedu onih duplih granica jednih od tabele a drugih od fields iz tabele
+}*/
+
+/*To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. 
+This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.*/
+
+div {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+/*kada imamo samo width i padding, dobijemo often undesirable results zato sto se na tu width teksta ide padding sa obje strane pa total witdh onda bude 350*/
+
+/*The height and width properties do not include padding, borders, or margins.
+ It sets the height/width of the area inside the padding, border, and margin of the element.*/
+/*auto - This is default. The browser calculates the height and width
+length - Defines the height/width in px, cm, etc.
+% - Defines the height/width in percent of the containing block
+initial - Sets the height/width to its default value
+inherit - The height/width will be inherited from its parent value*/
+
+/*The max-width property is used to set the maximum width of an element.
+
+The max-width can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).
+
+The problem with the <div> above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.
+
+Using max-width instead, in this situation, will improve the browser's handling of small windows.
+
+Tip: Drag the browser window to smaller than 500px wide, to see the difference between the two divs!*/
+/*Note: If you for some reason use both the width property and the max-width property on the same element, and the value of the width property is larger than the max-width property; the max-width property will be used (and the width property will be ignored).*/
+
+/*Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparen --> JAKO BITNOOOOOOOOOOO*/
+
+div {
+  width: 30px;
+  border: 150px solid green;
+  padding: 5px;
+  margin: 2px;
+}
+
+/*Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. 
+To calculate the full size of an element, you must also add padding, borders and margins.*/
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+
+p.ex1 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thin;
+}
+
+p.ex2 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: medium;
+}
+
+p.ex3 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thick;
+}
+
+p.ex4 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 4px;
+}
+
+
